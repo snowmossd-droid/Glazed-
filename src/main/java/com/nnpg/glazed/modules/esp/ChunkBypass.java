@@ -127,7 +127,7 @@ public class ChunkBypass extends Module {
     private long             lastQueueRebuild = 0L;
 
     public ChunkBypass() {
-        super("Chunk-Bypass", "Advanced base detector via block patterns and EntityVelocity packets.", GlazedAddon.esp, new net.minecraft.item.ItemStack(Items.COMPASS));
+        super(GlazedAddon.esp, "chunk-bypass", "Advanced base detector via block patterns and EntityVelocity packets.");
     }
 
     @Override
@@ -436,4 +436,5 @@ public class ChunkBypass extends Module {
         final String reason; final int x, z;
         ChunkNotification(String r, int x, int z) { reason = r; this.x = x; this.z = z; }
     }
-}
+                                                               }
+    
